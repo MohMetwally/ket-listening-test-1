@@ -375,29 +375,18 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
     details += q.toUpperCase() + ": Student Answer = " + userAnswer + " | Correct Answer = " + correctAnswer + "\n";
   }
 
-  let message = "";
-  if(score >= 20){
-    message = "Excellent! Well Done!";
-  } else if(score >= 15){
-    message = "Good Job!";
-  } else {
-    message = "Keep practising!";
-  }
-
   document.getElementById('result').innerHTML =
-    studentName + ", your score is " + score + " / " + total + "<br>" + message + "<br><br>Result sent successfully.";
+    "Thank you, " + studentName + "!<br>" +
+    "Your answers have been submitted successfully.<br>" +
+    "Well done and keep practising!";
 
   fetch("https://script.google.com/macros/s/AKfycbyU_Ib0W0UwaS_OYOZLCCO-pzPpFMO9MsUQ6CeNkumSmrob2R8Zbolfpps7n5qmFxABPw/exec", {
     method: "POST",
     mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
+    body: new URLSearchParams({
       name: studentName,
       score: score,
       total: total,
-      message: message,
       details: details
     })
   });
