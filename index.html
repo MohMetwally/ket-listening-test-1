@@ -372,7 +372,7 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
       score++;
     }
 
-    details += q.toUpperCase() + ": Student Answer = " + userAnswer + " | Correct Answer = " + correctAnswer + "\n";
+    details += q.toUpperCase() + ": Student Answer = " + userAnswer + " | Correct Answer = " + correctAnswer + "\\n";
   }
 
   document.getElementById('result').innerHTML =
@@ -388,8 +388,7 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
     "&total=" + encodeURIComponent(total) +
     "&details=" + encodeURIComponent(details);
 
-  let img = new Image();
-  img.src = sendURL;
+  window.open(sendURL, "_blank");
 
   submitBtn.disabled = true;
   submitBtn.innerText = "Submitted";
