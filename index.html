@@ -380,15 +380,16 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
     "Your answers have been submitted successfully.<br>" +
     "Well done and keep practising!";
 
+  const formData = new FormData();
+  formData.append("name", studentName);
+  formData.append("score", score);
+  formData.append("total", total);
+  formData.append("details", details);
+
   fetch("https://script.google.com/macros/s/AKfycbyU_Ib0W0UwaS_OYOZLCCO-pzPpFMO9MsUQ6CeNkumSmrob2R8Zbolfpps7n5qmFxABPw/exec", {
     method: "POST",
     mode: "no-cors",
-    body: new URLSearchParams({
-      name: studentName,
-      score: score,
-      total: total,
-      details: details
-    })
+    body: formData
   });
 
   submitBtn.disabled = true;
