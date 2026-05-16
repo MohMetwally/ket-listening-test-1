@@ -380,17 +380,16 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
     "Your answers have been submitted successfully.<br>" +
     "Well done and keep practising!";
 
-  const formData = new FormData();
-  formData.append("name", studentName);
-  formData.append("score", score);
-  formData.append("total", total);
-  formData.append("details", details);
+  let scriptURL = "https://script.google.com/macros/s/AKfycbyU_Ib0W0UwaS_OYOZLCCO-pzPpFMO9MsUQ6CeNkumSmrob2R8Zbolfpps7n5qmFxABPw/exec";
 
-  fetch("https://script.google.com/macros/s/AKfycbyU_Ib0W0UwaS_OYOZLCCO-pzPpFMO9MsUQ6CeNkumSmrob2R8Zbolfpps7n5qmFxABPw/exec", {
-    method: "POST",
-    mode: "no-cors",
-    body: formData
-  });
+  let sendURL = scriptURL +
+    "?name=" + encodeURIComponent(studentName) +
+    "&score=" + encodeURIComponent(score) +
+    "&total=" + encodeURIComponent(total) +
+    "&details=" + encodeURIComponent(details);
+
+  let img = new Image();
+  img.src = sendURL;
 
   submitBtn.disabled = true;
   submitBtn.innerText = "Submitted";
