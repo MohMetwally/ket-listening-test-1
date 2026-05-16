@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KET A2 Listening Test 01</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:'Comic Sans MS','Trebuchet MS',sans-serif;
+  background:repeating-linear-gradient(white 0px, white 29px, #d8e7ff 30px);
+  color:#1f2937;
+}
+.container{max-width:850px;margin:25px auto;padding:20px;}
+.card{
+  background:rgba(255,255,255,0.94);
+  border:3px solid #d62828;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+h1,h2{text-align:center;color:#0b5ed7;}
+.question{display:none;}
+.question.active{display:block;}
+img{
+  max-width:100%;
+  border:2px solid #333;
+  border-radius:12px;
+  margin:15px 0;
+}
+label{
+  display:block;
+  background:#fff7cc;
+  margin:12px 0;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #e0c84c;
+  cursor:pointer;
+  font-size:18px;
+}
+input[type="text"]{
+  width:95%;
+  padding:12px;
+  font-size:18px;
+  border:2px solid #0b5ed7;
+  border-radius:10px;
+}
+button{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:12px;
+  background:#0b5ed7;
+  color:white;
+  cursor:pointer;
+  margin-top:20px;
+}
+button:hover{background:#084298;}
+#submitBtn{background:#198754;}
+#result{
+  font-size:22px;
+  text-align:center;
+  margin-top:20px;
+  font-weight:bold;
+  color:#198754;
+}
+.small{text-align:center;color:#555;}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="card">
+
+<h1>Practice KET A2 Listening Test 01</h1>
+<p class="small">Listen to the audio from the iPad. Answer all questions.</p>
+
+<form id="quizForm">
+
+<div class="question active">
+  <h2>Student Information</h2>
+  <p><b>Write your name:</b></p>
+  <input type="text" id="studentName" required placeholder="Student name">
+</div>
+
+<div class="question">
+<h2>Listening Part 1</h2>
+<p><b>1. Where’s the girl going this afternoon?</b></p>
+<img src="images/q1.png" alt="Question 1 image">
+<label><input type="radio" name="q1" value="A"> A</label>
+<label><input type="radio" name="q1" value="B"> B</label>
+<label><input type="radio" name="q1" value="C"> C</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 1</h2>
+<p><b>2. Which is the boy’s new desk?</b></p>
+<img src="images/q2.png" alt="Question 2 image">
+<label><input type="radio" name="q2" value="A"> A</label>
+<label><input type="radio" name="q2" value="B"> B</label>
+<label><input type="radio" name="q2" value="C"> C</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 1</h2>
+<p><b>3. How will they get to their tennis class?</b></p>
+<img src="images/q3.png" alt="Question 3 image">
+<label><input type="radio" name="q3" value="A"> A</label>
+<label><input type="radio" name="q3" value="B"> B</label>
+<label><input type="radio" name="q3" value="C"> C</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 1</h2>
+<p><b>4. Which woman is Laura’s new English teacher?</b></p>
+<img src="images/q4.png" alt="Question 4 image">
+<label><input type="radio" name="q4" value="A"> A</label>
+<label><input type="radio" name="q4" value="B"> B</label>
+<label><input type="radio" name="q4" value="C"> C</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 1</h2>
+<p><b>5. What might Harry do if it rains on Saturday?</b></p>
+<img src="images/q5.png" alt="Question 5 image">
+<label><input type="radio" name="q5" value="A"> A</label>
+<label><input type="radio" name="q5" value="B"> B</label>
+<label><input type="radio" name="q5" value="C"> C</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 2</h2>
+<p><b>6. Day club will meet:</b></p>
+<input type="text" name="q6" placeholder="Write your answer">
+</div>
+
+<div class="question">
+<h2>Listening Part 2</h2>
+<p><b>7. Time: from ______ to 5 p.m.</b></p>
+<input type="text" name="q7" placeholder="Write your answer">
+</div>
+
+<div class="question">
+<h2>Listening Part 2</h2>
+<p><b>8. Teacher’s name: Mr ______</b></p>
+<input type="text" name="q8" placeholder="Write your answer">
+</div>
+
+<div class="question">
+<h2>Listening Part 2</h2>
+<p><b>9. Teacher’s phone number:</b></p>
+<input type="text" name="q9" placeholder="Write your answer">
+</div>
+
+<div class="question">
+<h2>Listening Part 2</h2>
+<p><b>10. Place:</b></p>
+<input type="text" name="q10" placeholder="Write your answer">
+</div>
+
+<div class="question">
+<h2>Listening Part 3</h2>
+<p><b>11. Where did Luis first find out about the game?</b></p>
+<label><input type="radio" name="q11" value="A"> A. from a game website</label>
+<label><input type="radio" name="q11" value="B"> B. from a school friend</label>
+<label><input type="radio" name="q11" value="C"> C. from a magazine advertisement</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 3</h2>
+<p><b>12. Charlotte likes the game because</b></p>
+<label><input type="radio" name="q12" value="A"> A. it’s funny</label>
+<label><input type="radio" name="q12" value="B"> B. it’s hard</label>
+<label><input type="radio" name="q12" value="C"> C. it’s new</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 3</h2>
+<p><b>13. Who does Luis want to play the game with?</b></p>
+<label><input type="radio" name="q13" value="A"> A. his brother</label>
+<label><input type="radio" name="q13" value="B"> B. his granddad</label>
+<label><input type="radio" name="q13" value="C"> C. his cousin</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 3</h2>
+<p><b>14. How long did Charlotte play the game for last Saturday?</b></p>
+<label><input type="radio" name="q14" value="A"> A. forty-five minutes</label>
+<label><input type="radio" name="q14" value="B"> B. one hour</label>
+<label><input type="radio" name="q14" value="C"> C. one hour and thirty minutes</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 3</h2>
+<p><b>15. Which part of the game does Luis like best?</b></p>
+<label><input type="radio" name="q15" value="A"> A. finding food</label>
+<label><input type="radio" name="q15" value="B"> B. building a hut</label>
+<label><input type="radio" name="q15" value="C"> C. crossing the river</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 4</h2>
+<p><b>16. What did the boy buy yesterday?</b></p>
+<label><input type="radio" name="q16" value="A"> A. something to wear</label>
+<label><input type="radio" name="q16" value="B"> B. something to eat</label>
+<label><input type="radio" name="q16" value="C"> C. something to read</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 4</h2>
+<p><b>17. Why didn’t Lyn come to school yesterday?</b></p>
+<label><input type="radio" name="q17" value="A"> A. She was sick.</label>
+<label><input type="radio" name="q17" value="B"> B. She was in a competition.</label>
+<label><input type="radio" name="q17" value="C"> C. She arrived back late from holiday.</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 4</h2>
+<p><b>18. How did he learn to surf?</b></p>
+<label><input type="radio" name="q18" value="A"> A. by doing a course</label>
+<label><input type="radio" name="q18" value="B"> B. by watching videos</label>
+<label><input type="radio" name="q18" value="C"> C. by practising by himself</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 4</h2>
+<p><b>19. Which subject did she like best?</b></p>
+<label><input type="radio" name="q19" value="A"> A. geography</label>
+<label><input type="radio" name="q19" value="B"> B. English</label>
+<label><input type="radio" name="q19" value="C"> C. biology</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 4</h2>
+<p><b>20. Why did they both sleep badly?</b></p>
+<label><input type="radio" name="q20" value="A"> A. Their bedroom was hot.</label>
+<label><input type="radio" name="q20" value="B"> B. There were noises in the street.</label>
+<label><input type="radio" name="q20" value="C"> C. They were excited about going on holiday.</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 5</h2>
+<p><b>21. Tyler</b></p>
+<label><input type="radio" name="q21" value="A"> A. actor</label>
+<label><input type="radio" name="q21" value="B"> B. coach</label>
+<label><input type="radio" name="q21" value="C"> C. dentist</label>
+<label><input type="radio" name="q21" value="D"> D. journalist</label>
+<label><input type="radio" name="q21" value="E"> E. mechanic</label>
+<label><input type="radio" name="q21" value="F"> F. pilot</label>
+<label><input type="radio" name="q21" value="G"> G. receptionist</label>
+<label><input type="radio" name="q21" value="H"> H. tour guide</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 5</h2>
+<p><b>22. Ava</b></p>
+<label><input type="radio" name="q22" value="A"> A. actor</label>
+<label><input type="radio" name="q22" value="B"> B. coach</label>
+<label><input type="radio" name="q22" value="C"> C. dentist</label>
+<label><input type="radio" name="q22" value="D"> D. journalist</label>
+<label><input type="radio" name="q22" value="E"> E. mechanic</label>
+<label><input type="radio" name="q22" value="F"> F. pilot</label>
+<label><input type="radio" name="q22" value="G"> G. receptionist</label>
+<label><input type="radio" name="q22" value="H"> H. tour guide</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 5</h2>
+<p><b>23. Mark</b></p>
+<label><input type="radio" name="q23" value="A"> A. actor</label>
+<label><input type="radio" name="q23" value="B"> B. coach</label>
+<label><input type="radio" name="q23" value="C"> C. dentist</label>
+<label><input type="radio" name="q23" value="D"> D. journalist</label>
+<label><input type="radio" name="q23" value="E"> E. mechanic</label>
+<label><input type="radio" name="q23" value="F"> F. pilot</label>
+<label><input type="radio" name="q23" value="G"> G. receptionist</label>
+<label><input type="radio" name="q23" value="H"> H. tour guide</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 5</h2>
+<p><b>24. Victoria</b></p>
+<label><input type="radio" name="q24" value="A"> A. actor</label>
+<label><input type="radio" name="q24" value="B"> B. coach</label>
+<label><input type="radio" name="q24" value="C"> C. dentist</label>
+<label><input type="radio" name="q24" value="D"> D. journalist</label>
+<label><input type="radio" name="q24" value="E"> E. mechanic</label>
+<label><input type="radio" name="q24" value="F"> F. pilot</label>
+<label><input type="radio" name="q24" value="G"> G. receptionist</label>
+<label><input type="radio" name="q24" value="H"> H. tour guide</label>
+</div>
+
+<div class="question">
+<h2>Listening Part 5</h2>
+<p><b>25. Bobby</b></p>
+<label><input type="radio" name="q25" value="A"> A. actor</label>
+<label><input type="radio" name="q25" value="B"> B. coach</label>
+<label><input type="radio" name="q25" value="C"> C. dentist</label>
+<label><input type="radio" name="q25" value="D"> D. journalist</label>
+<label><input type="radio" name="q25" value="E"> E. mechanic</label>
+<label><input type="radio" name="q25" value="F"> F. pilot</label>
+<label><input type="radio" name="q25" value="G"> G. receptionist</label>
+<label><input type="radio" name="q25" value="H"> H. tour guide</label>
+</div>
+
+<button type="button" id="nextBtn">Next</button>
+<button type="submit" id="submitBtn" style="display:none;">Submit</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+</div>
+
+<script>
+const questions = document.querySelectorAll('.question');
+let current = 0;
+
+const nextBtn = document.getElementById('nextBtn');
+const submitBtn = document.getElementById('submitBtn');
+
+nextBtn.onclick = function(){
+  if(current === 0){
+    const name = document.getElementById('studentName').value.trim();
+    if(name === ""){
+      alert("Please write your name.");
+      return;
+    }
+  }
+
+  questions[current].classList.remove('active');
+  current++;
+  questions[current].classList.add('active');
+
+  if(current === questions.length - 1){
+    nextBtn.style.display = "none";
+    submitBtn.style.display = "inline-block";
+  }
+};
+
+const answers = {
+  q1:"B", q2:"A", q3:"C", q4:"C", q5:"A",
+  q6:"thursdays",
+  q7:"4:20",
+  q8:"taylor",
+  q9:"0779386521",
+  q10:"library",
+  q11:"C", q12:"B", q13:"B", q14:"A", q15:"A",
+  q16:"A", q17:"C", q18:"B", q19:"C", q20:"A",
+  q21:"C", q22:"H", q23:"E", q24:"D", q25:"A"
+};
+
+function cleanAnswer(answer){
+  return answer.trim().toLowerCase().replace(/\s+/g,"");
+}
+
+document.getElementById('quizForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  let score = 0;
+  let total = 25;
+  let studentName = document.getElementById('studentName').value.trim();
+  let details = "";
+
+  for(let q in answers){
+    let userAnswer = "";
+
+    const selected = document.querySelector(`input[name="${q}"]:checked`);
+    const textInput = document.querySelector(`input[name="${q}"][type="text"]`);
+
+    if(selected){
+      userAnswer = selected.value;
+    } else if(textInput){
+      userAnswer = textInput.value.trim();
+    }
+
+    let correctAnswer = answers[q];
+
+    if(cleanAnswer(userAnswer) === cleanAnswer(correctAnswer)){
+      score++;
+    }
+
+    details += q.toUpperCase() + ": Student Answer = " + userAnswer + " | Correct Answer = " + correctAnswer + "\n";
+  }
+
+  let message = "";
+  if(score >= 20){
+    message = "Excellent! Well Done!";
+  } else if(score >= 15){
+    message = "Good Job!";
+  } else {
+    message = "Keep practising!";
+  }
+
+  document.getElementById('result').innerHTML =
+    studentName + ", your score is " + score + " / " + total + "<br>" + message + "<br><br>Result sent successfully.";
+
+  fetch("https://script.google.com/macros/s/AKfycbyU_Ib0W0UwaS_OYOZLCCO-pzPpFMO9MsUQ6CeNkumSmrob2R8Zbolfpps7n5qmFxABPw/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: studentName,
+      score: score,
+      total: total,
+      message: message,
+      details: details
+    })
+  });
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Submitted";
+});
+</script>
+
+</body>
+</html>
